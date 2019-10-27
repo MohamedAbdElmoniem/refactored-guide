@@ -1,0 +1,9 @@
+<div style="background-color: paleturquoise;margin:20px;width:50%;">
+  <h4>country name : {{countryDetails.name}}</h4>
+  <h4>native country name : {{countryDetails.nativeName}}</h4>
+  <h4>capital : {{countryDetails.capital}}</h4>
+ <div>
+  <img [src]="countryDetails.flag" style="width:50px;height:50px" />
+ </div>
+  <button style="marginLeft:30px"  (click)="handleProfileNavigation()" >country details</button>
+</div>

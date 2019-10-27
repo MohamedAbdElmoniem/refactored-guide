@@ -1,0 +1,25 @@
+<h2> name :  {{selectedCountry.name}}</h2>
+<h2> capital :  {{selectedCountry.capital}}</h2>
+<h2> region :  {{selectedCountry.region}}</h2>
+<h2> population :  {{selectedCountry.population}}</h2>
+<h2> main language :  {{selectedCountry.languages[0].name}}</h2>
+
+
+<!-- Html content -->
+<span tooltip="<b>Bold text</b>">
+  Tooltip with HTML content
+</span>
+
+
+<!-- Html template -->
+<ng-template #HtmlTemplate>
+  <b>hello to our course</b>
+</ng-template>
+
+<span [tooltip]="HtmlTemplate" content-type="template">
+  Tooltip with template content
+</span>
+
+
+
+<full-calendar  [defaultDate]="currentDate" [weekends]="true" defaultView="dayGridMonth" [plugins]="calendarPlugins"></full-calendar>
